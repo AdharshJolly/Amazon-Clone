@@ -46,7 +46,7 @@ function CheckoutProduct({ id, title, price, description, category, image, ratin
                 </p>
 
                 <div className="mb-5">
-                    <Currency quantity={price} currency="USD" />
+                    <Currency quantity={price} currency="INR" />
                 </div>
 
                 {hasPrime && (
