@@ -4,12 +4,17 @@ import db from "../../firebase";
 import { collection, getDocs, query, doc, orderBy } from "firebase/firestore"
 import moment from "moment"
 import Order from "../components/Order";
+import Head from "next/head";
 
 function Orders({ orders }) {
     const { data: session } = useSession();
 
     return (
         <div>
+            <Head>
+                <title>Orders | Amazon Clone</title>
+            </Head>
+
             <Header />
 
             <main className="max-w-screen-lg mx-auto p-10">

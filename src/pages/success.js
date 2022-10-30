@@ -1,10 +1,15 @@
 import Header from "../components/Header"
 import { CheckCircleIcon } from "@heroicons/react/solid"
 import Link from "next/link"
+import Head from "next/head"
 
 function Success() {
     return (
         <div className="bg-gray-100 h-screen">
+            <Head>
+                <title>Order Completed Successfully | Amazon Clone</title>
+            </Head>
+
             <Header />
 
             <main className="max-w-screen-lg mx-auto">
