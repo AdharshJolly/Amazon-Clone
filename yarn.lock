@@ -12,7 +12,7 @@
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.20.0.tgz#b26133c888da4d79b0d3edcf42677bcadc783046"
   integrity sha512-G9VgAhEaICnz8iiJeGJQyVl6J2nTjbW0xeisva0PK6XcKsga7BIaqm4ZF8Rg1Wbaqmy6znspNqhPaPkyukujzg==
 
-"@babel/runtime@^7.12.1", "@babel/runtime@^7.20.13":
+"@babel/runtime@^7.20.13":
   version "7.26.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.26.0.tgz#8600c2f595f277c60815256418b85356a65173c1"
   integrity sha512-FDSOghenHTiToteC/QRlv2q3DhPZ/oOXTBoirfWNx1Cx3TMVcGWQtMMmQcSvb/JjpNeGzx8Pq/b4fKEJuWm1sw==
@@ -798,6 +798,11 @@
   dependencies:
     "@types/mime" "^1"
     "@types/node" "*"
+
+"@types/use-sync-external-store@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@types/use-sync-external-store/-/use-sync-external-store-0.0.3.tgz#b6725d5f4af24ace33b36fafd295136e75509f43"
+  integrity sha512-EwmlvuaxPNej9+T4v5AuBPJa2x2UOJVdjCtDHgcDqitUeOtjnJKJ+apYjVcAoBEMjKW1VVFGZLUb5+qqa09XFA==
 
 abort-controller@^3.0.0:
   version "3.0.0"
@@ -1595,13 +1600,6 @@ hasown@^2.0.2:
   integrity sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==
   dependencies:
     function-bind "^1.1.2"
-
-hoist-non-react-statics@^3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
-  integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
-  dependencies:
-    react-is "^16.7.0"
 
 http-errors@1.7.3:
   version "1.7.3"
@@ -2450,15 +2448,6 @@ prop-types@^15.5.8, prop-types@^15.6.0:
     object-assign "^4.1.1"
     react-is "^16.13.1"
 
-prop-types@^15.7.2:
-  version "15.7.2"
-  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
-  integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
-  dependencies:
-    loose-envify "^1.4.0"
-    object-assign "^4.1.1"
-    react-is "^16.8.1"
-
 proto3-json-serializer@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/proto3-json-serializer/-/proto3-json-serializer-1.1.0.tgz#52d9c73b24d25ff925639e1e5a01ac883460149f"
@@ -2558,14 +2547,13 @@ react-currency-formatter@^1.1.0:
   dependencies:
     prop-types "^15.6.0"
 
-react-dom@17.0.1:
-  version "17.0.1"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.1.tgz#1de2560474ec9f0e334285662ede52dbc5426fc6"
-  integrity sha512-6eV150oJZ9U2t9svnsspTMrWNyHc6chX0KzDeAOXftRa8bNeOKTTfCJ7KorIwenkHd2xqVTBTCZd79yk/lx/Ug==
+react-dom@^18.3.1:
+  version "18.3.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.3.1.tgz#c2265d79511b57d479b3dd3fdfa51536494c5cb4"
+  integrity sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==
   dependencies:
     loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    scheduler "^0.20.1"
+    scheduler "^0.23.2"
 
 react-easy-swipe@^0.0.21:
   version "0.0.21"
@@ -2574,21 +2562,18 @@ react-easy-swipe@^0.0.21:
   dependencies:
     prop-types "^15.5.8"
 
-react-is@^16.13.1, react-is@^16.7.0, react-is@^16.8.1:
+react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-redux@7.2.2:
-  version "7.2.2"
-  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-7.2.2.tgz#03862e803a30b6b9ef8582dadcc810947f74b736"
-  integrity sha512-8+CQ1EvIVFkYL/vu6Olo7JFLWop1qRUeb46sGtIMDCSpgwPQq8fPLpirIB0iTqFe9XYEFPHssdX8/UwN6pAkEA==
+react-redux@^9.1.2:
+  version "9.1.2"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-9.1.2.tgz#deba38c64c3403e9abd0c3fbeab69ffd9d8a7e4b"
+  integrity sha512-0OA4dhM1W48l3uzmv6B7TXPCGmokUU4p1M44DGN2/D9a1FjVPukVjER1PcPX97jIg6aUeLq1XJo1IpfbgULn0w==
   dependencies:
-    "@babel/runtime" "^7.12.1"
-    hoist-non-react-statics "^3.3.2"
-    loose-envify "^1.4.0"
-    prop-types "^15.7.2"
-    react-is "^16.13.1"
+    "@types/use-sync-external-store" "^0.0.3"
+    use-sync-external-store "^1.0.0"
 
 react-responsive-carousel@^3.2.23:
   version "3.2.23"
@@ -2599,13 +2584,12 @@ react-responsive-carousel@^3.2.23:
     prop-types "^15.5.8"
     react-easy-swipe "^0.0.21"
 
-react@17.0.1:
-  version "17.0.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-17.0.1.tgz#6e0600416bd57574e3f86d92edba3d9008726127"
-  integrity sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w==
+react@^18.3.1:
+  version "18.3.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.3.1.tgz#49ab892009c53933625bd16b2533fc754cab2891"
+  integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
   dependencies:
     loose-envify "^1.1.0"
-    object-assign "^4.1.1"
 
 read-cache@^1.0.0:
   version "1.0.0"
@@ -2731,13 +2715,12 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-scheduler@^0.20.1:
-  version "0.20.2"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.20.2.tgz#4baee39436e34aa93b4874bddcbf0fe8b8b50e91"
-  integrity sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ==
+scheduler@^0.23.2:
+  version "0.23.2"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.2.tgz#414ba64a3b282892e944cf2108ecc078d115cdc3"
+  integrity sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==
   dependencies:
     loose-envify "^1.1.0"
-    object-assign "^4.1.1"
 
 selenium-webdriver@4.5.0:
   version "4.5.0"
@@ -3078,6 +3061,11 @@ unpipe@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
   integrity sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==
+
+use-sync-external-store@^1.0.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.2.tgz#c3b6390f3a30eba13200d2302dcdf1e7b57b2ef9"
+  integrity sha512-PElTlVMwpblvbNqQ82d2n6RjStvdSoNe9FG28kNfz3WiXilJm4DdNkEzRhCZuIDwY8U08WVihhGR5iRqAwfDiw==
 
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
