@@ -9,7 +9,7 @@
   "dependencies": {
     "@heroicons/react": "v1.0.6",
     "@reduxjs/toolkit": "2.3.0",
-    "@stripe/stripe-js": "^1.42.0",
+    "@stripe/stripe-js": "^4.10.0",
     "@tailwindcss/line-clamp": "^0.2.0",
     "axios": "^1.7.4",
     "firebase": "^9.13.0",
